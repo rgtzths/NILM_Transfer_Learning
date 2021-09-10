@@ -1,8 +1,5 @@
 echo Building conda package...
 
-conda create -n builder conda-build anaconda-client
-conda activate builder
-
 # Build conda packages
 mkdir ../artifacts
 export ARTIFACTS_FOLDER=`readlink -f ../artifacts`
