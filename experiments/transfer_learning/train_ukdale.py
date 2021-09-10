@@ -15,9 +15,9 @@ from resnet import ResNet
 from deep_gru import DeepGRU
 from mlp_dwt import MLP
 
-ukdale_dataset = '../../../datasets/ukdale/ukdale.h5'#Path to the REFIT dataset.
+ukdale_dataset = '../../../datasets/ukdale/ukdale.h5'#Path to the UKDALE dataset.
 
-no_transfer_path = "./base_train/refit_train/models/"
+no_transfer_path = "../base_train/refit_train/models/"
 
 def run_fridge(base_path, timestep, epochs, batch_size, sequence_length, model_path):
     fridge = {
@@ -1093,8 +1093,8 @@ if __name__ == "__main__":
     
 
     #base_path = "./no_transfer_results/ukdale/"
-    base_path = "./transfer_results/ukdale/"
-    models_path = "./base_train/refit_train/models/"
+    base_path = "../transfer_results/ukdale/"
+    models_path = "../base_train/refit_train/models/"
     
     for i in range(1):
         run_fridge(base_path, timestep, epochs, batch_size, sequence_length, models_path)

@@ -17,7 +17,7 @@ from deep_gru import DeepGRU
 from mlp_dwt import MLP
 
 refit_dataset = '../../../datasets/refit/refit.h5' #Path to the REFIT dataset.
-no_transfer_path = "./base_train/ukdale_train/models/" #Path from where to load the models (in this case the ukdale experiment)
+no_transfer_path = "../base_train/ukdale_train/models/" #Path from where to load the models (in this case the ukdale experiment)
 Appliance.allow_synonyms = False
 
 def run_fridge(base_path, timestep, epochs, batch_size, sequence_length, model_path):
@@ -1307,8 +1307,8 @@ if __name__ == "__main__":
     timestep = 7
 
     #base_path = "./no_transfer_results/refit/"
-    base_path = "./transfer_results/refit/" #base path to save the output from the experiments
-    models_path = "./base_train/ukdale_train/models/" #Path from where to load the models (in this case the ukdale experiment)
+    base_path = "../transfer_results/refit/" #base path to save the output from the experiments
+    models_path = "../base_train/ukdale_train/models/" #Path from where to load the models (in this case the ukdale experiment)
 
     run_fridge(base_path, timestep, epochs, batch_size, sequence_length, models_path)
     run_kettle(base_path, timestep, epochs, batch_size, sequence_length, models_path)

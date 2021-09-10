@@ -16,7 +16,7 @@ from resnet import ResNet
 from deep_gru import DeepGRU
 from mlp_dwt import MLP
 
-refit_dataset = '../../../datasets/refit/refit.h5'
+refit_dataset = '../../../datasets/refit/refit.h5' #Path to the REFIT dataset.
 
 Appliance.allow_synonyms = False
 
@@ -1230,7 +1230,7 @@ def run_washing_machine(base_path, timestep, epochs, batch_size, sequence_length
         results.methods[m].save_model(base_path + "models/" + m)
 
 if __name__ == "__main__":
-    base_path= "./base_train/refit_train/"
+    base_path= "../base_train/refit_train/"
     
     epochs = 300
     batch_size = 512

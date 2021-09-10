@@ -15,7 +15,7 @@ from resnet import ResNet
 from deep_gru import DeepGRU
 from mlp_dwt import MLP
 
-ukdale_dataset = '../../../datasets/ukdale/ukdale.h5'
+ukdale_dataset = '../../../datasets/ukdale/ukdale.h5' #Path to the UKDALE dataset.
 
 def run_fridge(base_path, timestep, epochs, batch_size, sequence_length):
     fridge = {
@@ -992,7 +992,7 @@ def run_washing_machine(base_path, timestep, epochs, batch_size, sequence_length
         results.methods[m].save_model(base_path + "models/" + m)
 
 if __name__ == "__main__":
-    base_path= "./base_train/ukdale_train/"
+    base_path= "../base_train/ukdale_train/"
 
     epochs = 300
     batch_size = 256
