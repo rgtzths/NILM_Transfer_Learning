@@ -355,10 +355,8 @@ class ResNet():
         output_block_1 = keras.layers.Add()([shortcut_y, conv_z])
         output_block_1 = keras.layers.Activation('relu')(output_block_1)
 
-        drop1 = keras.layers.Dropout(0.2)(output_block_1)
-
         # BLOCK 2
-        conv_x = keras.layers.Conv2D(n_nodes * 2, 8, 1, padding='same')(drop1)
+        conv_x = keras.layers.Conv2D(n_nodes * 2, 8, 1, padding='same')(output_block_1)
         conv_x = keras.layers.BatchNormalization()(conv_x)
         conv_x = keras.layers.Activation('relu')(conv_x)
 
@@ -376,10 +374,8 @@ class ResNet():
         output_block_2 = keras.layers.Add()([shortcut_y, conv_z])
         output_block_2 = keras.layers.Activation('relu')(output_block_2)
         
-        drop2 = keras.layers.Dropout(0.2)(output_block_2)
         # BLOCK 3
-
-        conv_x = keras.layers.Conv2D(int(n_nodes * 2), 8, 1, padding='same')(drop2)
+        conv_x = keras.layers.Conv2D(int(n_nodes * 2), 8, 1, padding='same')(output_block_2)
         conv_x = keras.layers.BatchNormalization()(conv_x)
         conv_x = keras.layers.Activation('relu')(conv_x)
 
@@ -395,10 +391,8 @@ class ResNet():
         output_block_3 = keras.layers.Add()([shortcut_y, conv_z])
         output_block_3 = keras.layers.Activation('relu')(output_block_3)
         
-        drop3 = keras.layers.Dropout(0.2)(output_block_3)
         # FINAL
-
-        full = keras.layers.GlobalAveragePooling2D()(drop3)
+        full = keras.layers.GlobalAveragePooling2D()(output_block_3)
         ##Add dense layer with 32/64 nodes
 
         output_layer = keras.layers.Dense(1)(full)
