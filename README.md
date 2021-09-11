@@ -35,4 +35,8 @@ The folder structure should be:
 
 - Convert REFIT to H5 using the NILMTK Converter
 
+### Side Note
+
+In the transfer learning process you need to change the fridge_frezzer name in the refit base_results to fridge.
+
 # Congrats, you are all set.
