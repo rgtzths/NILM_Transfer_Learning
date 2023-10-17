@@ -39,4 +39,15 @@ The folder structure should be:
 
 In the transfer learning process you need to change the fridge_frezzer name in the refit base_results to fridge.
 
-# Congrats, you are all set.
+## Authors
+
+* **Rafael Teixeira** - [rgtzths](https://github.com/rgtzths)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+## Citation
+
+If you use this code please site our work:
+Teixeira, Rafael & Antunes, Mário & Gomes, Diogo. (2021). Using Deep Learning and Knowledge Transfer to Disaggregate Energy Consumption. 1-7. 10.1109/ICWAPR54887.2021.9736149. 
