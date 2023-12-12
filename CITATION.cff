@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Rafael"
+  given-names: "Teixeira"
+  orcid: "https://orcid.org/0000-0000-0000-0000"
+title: "Using Deep Learning and Knowledge Transfer to Disaggregate Energy Consumption"
+version: 1.0.0
+doi: 10.1109/ICWAPR54887.2021.9736149
+date-released: 2021-12-05
+url: "https://github.com/rgtzths/ICMLC_ICWAPR_code_base"
+preferred-citation:
+  type: conference-paper
+  authors:
+  - family-names: "Teixeira"
+    given-names: "Rafael"
+    orcid: "https://orcid.org/0000-0001-7211-382X"
+  - family-names: "Antunes"
+    given-names: "Mário"
+    orcid: "https://orcid.org/0000-0002-6504-9441"
+  - family-names: "Sobral"
+    given-names: "Rúben"
+    orcid: "https://orcid.org/0009-0001-4357-6582"
+  - family-names: "Martins"
+    given-names: "João"
+    orcid: "https://orcid.org/0009-0008-1193-2483"
+  - family-names: "Gomes"
+    given-names: "Diogo"
+    orcid: "https://orcid.org/0000-0002-5848-2802"
+  title: "Using Deep Learning and Knowledge Transfer to Disaggregate Energy Consumption"
+  doi: 10.1109/ICWAPR54887.2021.9736149
+  conference:
+    name: "International Conference on Wavelet Analysis and Pattern Recognition"
+    city: "Adelaide"
+    country: "Australia"
+    date-start: 2021-12-04
+    date-end: 2021-12-05
