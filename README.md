@@ -1,4 +1,4 @@
-# ICMLC_ICWAPR_code_base
+# NILM Transfer Learning
 
 ## Python Requirements
 ### Create a conda environment
